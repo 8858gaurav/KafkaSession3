@@ -1,3 +1,8 @@
+Bootstrap servers : Say we have a 100 node kafka cluster, it is not
+possible to give the IP addresses of all these, rather we provide the IP
+address of a few servers. The client can connect to one of these servers
+and get to know all the metadata of the other brokers in the cluster.
+
 producer.produce(topic, key, value, callback) is an asynchronous
 method used to produce the data to a given topic.
 
