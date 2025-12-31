@@ -1,13 +1,14 @@
 # trigger kafka batch job.
 
+# create API key and secret in confluent cloud once after creating a cluster.
+# then attatch the API key and secret to the topic you create in confluent cloud.
+# also check the bootstrap servers.
+
 # Install this libraries in databricks.
+# here: https://adb-7405611670894568.8.azuredatabricks.net/compute/clusters/1231-074055-14oqu1ej/libraries?o=7405611670894568
 # confluent-kafka[avro,json,protobuf]>=1.4.2
 
 # run this code in databricks.
-
-#============================
-# Writing to a kakfka topic =
-#============================
 
 
 from confluent_kafka import Producer
