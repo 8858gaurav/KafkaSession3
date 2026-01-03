@@ -53,6 +53,16 @@ orders_df = spark \
    .option("startingTimestamp", 1) \
    .option("maxOffsetsPerTrigger", 50) \
    .load()
+
+orders_df.printSchema()
+# root
+#  |-- key: binary (nullable = true)
+#  |-- value: binary (nullable = true)
+#  |-- topic: string (nullable = true)
+#  |-- partition: integer (nullable = true)
+#  |-- offset: long (nullable = true)
+#  |-- timestamp: timestamp (nullable = true)
+#  |-- timestampType: integer (nullable = true)
    # it read the topic from the very starting - startingTimestamp
    # microbatches are of same size - maxOffsetsPerTrigger
 
