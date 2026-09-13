@@ -1,3 +1,9 @@
+####
+1. writing to a kafka topic first via batch job
+2. reading the live stram kafka topic via sparkreadstream method
+3. writing the live stream data as a delta table for the analysis
+
+
 landing_zone = '/Volumes/misgaurav_databricks_ws_7405615643942288/default/misgaurav_v/retail_data/'
 orders_data = landing_zone + 'orders_data'
 checkpoint_path = landing_zone + 'orders_checkpoint'
